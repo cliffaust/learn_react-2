@@ -2,15 +2,15 @@ const initialState = {
   number: 0,
 };
 
-export const counterReducers = (state = initialState, action) => {
+export const counterReducers = (state = initialState.number, action) => {
   switch (action.type) {
     case "INCRECE":
-      return state.number + 1;
+      return state + 1;
 
     case "DECRECE":
-      return state.number - 1;
+      return state - 1;
 
     default:
-      return state.number;
+      return state;
   }
 };
