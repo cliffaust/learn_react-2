@@ -6,7 +6,7 @@ function App() {
   const dispatch = useDispatch();
   return (
     <div>
-      <h3>Counter: {counter.number}</h3>
+      <h3>Counter: {counter}</h3>
       <button onClick={() => dispatch(increce())}>add</button>
       <button onClick={() => dispatch(decrece())}>remove</button>
     </div>
