@@ -1,16 +1,16 @@
 const initialState = {
-  number: 0,
+  num: "jun",
 };
 
 export const counterReducers = (state = initialState, action) => {
   switch (action.type) {
     case "INCRECE":
-      return (state.number = 4);
+      return { ...state, num: "name" };
 
     case "DECRECE":
-      return (state.number = 2);
+      return { ...state, num: "dan" };
 
     default:
-      return state.number;
+      return state;
   }
 };
